@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tic-tac-toe</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/grid/Grid.css">
+</head>
+<body>
+<header>
+    <h1>Tic-tac-toe</h1>
+
+</header>
+<section class="fields">
+        <div class="symbols">
+                <div class="p1" id="p1">
+                        <h2>Player 1</h2>
+                        <div class="o">O</div>
+                        </div>
+                                
+                <div class="p2" id="p2">
+                        <h2>Player 2</h2>
+                        <div class="x">X</div>
+                        </div>
+        </div> 
+        <div id="winner"></div>
+
+        <div class="square" id="square">   
+                <div id="square-two"><i class="ion-ios-loop" id="restart"></i></div>
+                <div class="column-1">
+                        <div class="small-square-one" id="1" onclick="field1()"></div>
+                        <div class="small-square-two" id="2" onclick="field2()"></div>
+                        <div class="small-square-one" id="3" onclick="field3()"></div>
+                </div>
+                <div class="column-2">
+                        <div class="small-square-two" id="4" onclick="field4()"></div>
+                        <div class="small-square-one" id="5" onclick="field5()"></div>
+                        <div class="small-square-two" id="6" onclick="field6()"></div>
+                </div>
+                <div class="column-3">
+                        <div class="small-square-one" id="7" onclick="field7()"></div>
+                        <div class="small-square-two" id="8" onclick="field8()"></div>
+                        <div class="small-square-one" id="9" onclick="field9()"></div>
+                </div>
+        </div>
+        
+    <div id="x">X</div>
+    <div id="o">O</div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
